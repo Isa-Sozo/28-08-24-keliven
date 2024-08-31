@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .gallery img{
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid transparent;
+        }
+        .gallery img:hover{
+            border-color: #2ecc71;
+        }
+        .featured {
+            max-width: 90%;
+            max-height: 70vh;
+            border: 5px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Imagens</h1>
+    <div>
+        <img id="featuredImage" class="featured" src="imagem1.jfif" alt="Imagem em Destaque">
+    </div>
+    <div class="gallery">
+        <img src="imagem1.jfif" alt="Imagem 1">
+        <img src="imagem2.jfif" alt="imagem 2">
+        <img src="imagem3.jfif" alt="Imagem 3">
+        <img src="imagem4.jfif" alt="Imagem 4">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
